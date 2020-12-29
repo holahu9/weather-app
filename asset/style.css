@@ -21,9 +21,9 @@ img{
 
 }
 
-/*.hide {
+.hide {
     display:none;
-}*/
+}
 
 .text-center{
     border-top: 2px solid rosybrown;
@@ -42,13 +42,18 @@ img{
     
 }
 
+
 .text-center h1{
     font-size: 50px;
     color: #42A3B9; 
     font-weight: lighter;
+   
+    
   
     
 }
+
+
 
 h3, h5, #current-city {
     color: #42A3B9; 
