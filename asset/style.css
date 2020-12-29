@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body {
+    background-image: url("bg4.jpg");
+    position: center;
+    background-size: cover;
+    font-weight: lighter;
+ 
+}
+
+img{
+    width: 130px;
+    height:110px;
+    position: center;
+    margin-right: 20px;
+    border-radius:100px;
+    box-shadow: 50px 15px 25px rgba(142, 175, 20, 0.5);
+
+}
+
+/*.hide {
+    display:none;
+}*/
+
+.text-center{
+    border-top: 2px solid rosybrown;
+    border-bottom: 2px solid rgb(197, 116, 166);
+    box-shadow: 0px 15px 25px rgba(22, 165, 231, 0.5);
+    border-radius: 20px;
+    
+}
+
+.col-md-3 {
+    border-radius: 20px;
+    border: 2px solid white;
+    opacity: 65%;
+    padding-top: 20px;
+
+    
+}
+
+.text-center h1{
+    font-size: 50px;
+    color: #42A3B9; 
+    font-weight: lighter;
+  
+    
+}
+
+h3, h5, #current-city {
+    color: #42A3B9; 
+    font-weight: 400;  
+    font-family: 'Sacramento', cursive; 
+}
+
+
+#current-city{
+    color: #42A3B9;
+}
+.city-info{
+    color: white;
+    border-radius: 20px;
+    
+}
+
+.col-2 .card {
+    border-radius: 20px;
+    border: 2px solid white;
+    opacity: 65%;
+    padding-top: 20px;
+    background-color: rgb(151, 79, 187);
+    color: white
+}
+
+
+
+
+
