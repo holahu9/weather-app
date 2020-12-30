@@ -94,7 +94,18 @@ $(document).on("submit", function(event){
     searchCityInput.val(""); 
 });
 
+// Clicking the search button will trigger
+// value added to search history
+searchCityButton.on("click", function(event){
+    event.preventDefault();
 
+    // Grab value entered into search bar 
+    var searchValue = searchCityInput.val().trim();
+
+    currentConditionsRequest(searchValue)
+    searchHistory(searchValue);    
+    searchCityInput.val(""); 
+});
 
 // Request Open Weather API based on user input
 function currentConditionsRequest(searchValue) {
