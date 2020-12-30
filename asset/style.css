@@ -18,7 +18,7 @@ img{
     position: center;
     margin-right: 20px;
     border-radius:110px;
-    box-shadow: 50px 15px 25px rgba(20, 175, 33, 0.5);
+    box-shadow: 50px 15px 25px rgba(236, 59, 14, 0.5);
     background-color: rgb(211, 82, 194);
     background-image: url("icon3.jpg");
    
@@ -82,12 +82,15 @@ h3, h5, #current-city {
     opacity: 65%;
     padding-top: 20px;
     background-color: rgb(151, 79, 187);
-    color: white
+    color: white;
+    border: none;
+
+    
 }
 
 .card-body{
     background-color: rgb(30, 39, 20);
-    color: white
+    color: white;
 }
 
 
