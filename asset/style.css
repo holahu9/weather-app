@@ -4,7 +4,8 @@
     padding:0;
 }
 body {
-    background-image: url("bg2.jpg");
+    /*background-image: url("bg6.jpg");*/
+    background-color: #272629;
     position: center;
     background-size: cover;
     font-weight: lighter;
@@ -57,7 +58,7 @@ img{
 
 
 h3, h5, #current-city {
-    color: #42b96a; 
+    color: #42A3B9; 
     font-weight: 400;  
     font-family: 'Sacramento', cursive; 
 }
