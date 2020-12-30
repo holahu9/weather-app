@@ -18,7 +18,8 @@ img{
     position: center;
     margin-right: 20px;
     border-radius:100px;
-    box-shadow: 50px 15px 25px rgba(142, 175, 20, 0.5);
+    box-shadow: 50px 15px 25px rgba(20, 175, 33, 0.5);
+    background-color: rgb(19, 105, 204);
 
 }
 
@@ -79,6 +80,11 @@ h3, h5, #current-city {
     opacity: 65%;
     padding-top: 20px;
     background-color: rgb(151, 79, 187);
+    color: white
+}
+
+.card-body{
+    background-color: rgb(30, 39, 20);
     color: white
 }
 

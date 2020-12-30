@@ -30,6 +30,10 @@ $("#current-date").text("(" + currentDate + ")");
 initalizeHistory();
 showClear();
 
+
+
+
+
 // Grab city list string from local storage
 // and update the city list array
 // for the search history sidebar
@@ -106,6 +110,43 @@ searchCityButton.on("click", function(event){
     searchHistory(searchValue);    
     searchCityInput.val(""); 
 });
+
+
+// Display and save the search history of cities
+function searchHistory(searchValue) {
+    // Grab value entered into search bar 
+    // var searchValue = searchCityInput.val().trim();
+    
+    // If there are characters entered into the search bar
+    if (searchValue) {
+        // Place value in the array of cities
+        // if it is a new entry
+        if (cityList.indexOf(searchValue) === -1) {
+            cityList.push(searchValue);
+
+            // List all of the cities in user history
+            listArray();
+            clearHistoryButton.removeClass("hide");
+            weatherContent.removeClass("hide");
+        } else {
+            // Remove the existing value from
+            // the array
+            var removeIndex = cityList.indexOf(searchValue);
+            cityList.splice(removeIndex, 1);
+
+            // Push the value again to the array
+            cityList.push(searchValue);
+
+            // list all of the cities in user history
+            // so the old entry appears at the top
+            // of the search history
+            listArray();
+            clearHistoryButton.removeClass("hide");
+            weatherContent.removeClass("hide");
+        }
+    }
+    // console.log(cityList);
+}
 
 // Request Open Weather API based on user input
 function currentConditionsRequest(searchValue) {
@@ -200,41 +241,7 @@ function currentConditionsRequest(searchValue) {
 
 };
 
-// Display and save the search history of cities
-function searchHistory(searchValue) {
-    // Grab value entered into search bar 
-    // var searchValue = searchCityInput.val().trim();
-    
-    // If there are characters entered into the search bar
-    if (searchValue) {
-        // Place value in the array of cities
-        // if it is a new entry
-        if (cityList.indexOf(searchValue) === -1) {
-            cityList.push(searchValue);
 
-            // List all of the cities in user history
-            listArray();
-            clearHistoryButton.removeClass("hide");
-            weatherContent.removeClass("hide");
-        } else {
-            // Remove the existing value from
-            // the array
-            var removeIndex = cityList.indexOf(searchValue);
-            cityList.splice(removeIndex, 1);
-
-            // Push the value again to the array
-            cityList.push(searchValue);
-
-            // list all of the cities in user history
-            // so the old entry appears at the top
-            // of the search history
-            listArray();
-            clearHistoryButton.removeClass("hide");
-            weatherContent.removeClass("hide");
-        }
-    }
-    // console.log(cityList);
-}
 
 // List the array into the search history sidebar
 function listArray() {
