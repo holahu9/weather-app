@@ -23,7 +23,7 @@ var clearHistoryButton = $("#clear-history");
 
 
 //  display current date 
-var currentDate = moment().format('L');
+var currentDate = moment().format('MMMM Do');
 $("#current-date").text("(" + currentDate + ")");
 
 // Check if search history exists when page loads
