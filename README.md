@@ -18,3 +18,5 @@ THEN I am presented with the last searched city forecast
 ```
 
 deployed app:  https://holahu9.github.io/weather-app/
+
+![Screen Shot 2020-12-29 at 11 47 25 PM](https://user-images.githubusercontent.com/70487513/103330620-58955780-4a30-11eb-87c2-03e5b42a9a72.png)
